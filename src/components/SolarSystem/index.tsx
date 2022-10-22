@@ -1,10 +1,11 @@
 import React from 'react';
+import Title from '../Title';
 import { Container } from './styles';
 
 function SolarSystem() {
   return (
     <Container>
-      <h1>SolarSystem</h1>
+      <Title headline="Planetas" />
     </Container>
   );
 }
