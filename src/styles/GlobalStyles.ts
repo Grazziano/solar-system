@@ -9,7 +9,24 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+  }
+
+  body {
+    height: 100vh;
     background-color: ${(props) => props.theme.colors.tertiary};
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar{
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+      background-color: ${(props) => props.theme.colors.primary};
+    }
+
+    ::-webkit-scrollbar-track{
+      background-color: ${(props) => props.theme.colors.secondary};
+    }
   }
 
   *, button, input {
