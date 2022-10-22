@@ -1,4 +1,5 @@
 import React from 'react';
+import { HeaderContainer, Title } from './styles';
 
 interface IHeaderProps {
   title: string;
@@ -6,9 +7,9 @@ interface IHeaderProps {
 
 function Header({ title }: IHeaderProps) {
   return (
-    <header>
-      <h1>{title}</h1>
-    </header>
+    <HeaderContainer>
+      <Title>{title}</Title>
+    </HeaderContainer>
   );
 }
 
