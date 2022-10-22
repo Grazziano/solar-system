@@ -1,7 +1,21 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  background-color: ${(props) => props.theme.colors.secondary};
+  padding: 20px;
+  border: 1px solid ${(props) => props.theme.colors.white};
+  border-radius: 0.5rem;
+  width: 300px;
+  margin-bottom: 10px;
+  line-height: 20px;
+`;
 
-export const Title = styled.h3``;
+export const Title = styled.h3`
+  color: ${(props) => props.theme.colors.primary};
+  border-bottom: 1px solid ${(props) => props.theme.colors.white};
+  margin-bottom: 1rem;
+`;
 
-export const Paragraph = styled.p``;
+export const Paragraph = styled.p`
+  color: ${(props) => props.theme.colors.white};
+`;

@@ -8,15 +8,17 @@ function Missions() {
   return (
     <Container>
       <Title headline="Missões" />
-      {missions.map((mission) => (
-        <MissionCard
-          key={mission.name}
-          name={mission.name}
-          year={Number(mission.year)}
-          country={mission.country}
-          destination={mission.destination}
-        />
-      ))}
+      <div className="missions-list">
+        {missions.map((mission) => (
+          <MissionCard
+            key={mission.name}
+            name={mission.name}
+            year={Number(mission.year)}
+            country={mission.country}
+            destination={mission.destination}
+          />
+        ))}
+      </div>
     </Container>
   );
 }
