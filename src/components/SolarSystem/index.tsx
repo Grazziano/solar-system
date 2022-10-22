@@ -8,13 +8,15 @@ function SolarSystem() {
   return (
     <Container>
       <Title headline="Planetas" />
-      {Planets.map((planet) => (
-        <PlanetCard
-          key={planet.name}
-          planetName={planet.name}
-          planetImage={planet.image}
-        />
-      ))}
+      <div className="planets-list">
+        {Planets.map((planet) => (
+          <PlanetCard
+            key={planet.name}
+            planetName={planet.name}
+            planetImage={planet.image}
+          />
+        ))}
+      </div>
     </Container>
   );
 }
