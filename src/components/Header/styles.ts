@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid ${(props) => props.theme.colors.white};
+  opacity: 0.8;
 `;
 
 export const Title = styled.h1`
