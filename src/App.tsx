@@ -1,8 +1,10 @@
 import Header from './components/Header';
+import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <GlobalStyles />
       <Header title="Sistema Solar" />
     </div>
   );
