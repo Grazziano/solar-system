@@ -6,6 +6,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid ${(props) => props.theme.colors.white};
 `;
 
 export const Title = styled.h1`
